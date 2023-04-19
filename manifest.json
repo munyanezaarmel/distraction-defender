@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Distraction Defender ",
+  "version": "1.0",
+  "description": "DistractionDefender is a productivity-focused Chrome extension that helps you stay on task by blocking distracting websites. Whether you're trying to study, work, or just need to stay focused, DistractionDefender has got you covered. With its customizable settings, you can choose which websites to block and for how long, giving you complete control over your browsing habits. Say goodbye to mindless scrolling and hello to a more productive you with DistractionDefender",
+  "icons": {
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "action": {
+    "default_popup": "hello.html",
+    "default_icon": "images/icon128.png"
+  },
+
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://developer.chrome.com/docs/extensions/*",
+        "https://developer.chrome.com/docs/webstore/*"
+      ]
+    }
+  ]
+}
