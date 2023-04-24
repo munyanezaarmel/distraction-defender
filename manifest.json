@@ -10,7 +10,7 @@
     "128": "images/icon128.png"
   },
   "action": {
-    "default_popup": "hello.html",
+    "default_popup": "popup/hello.html",
     "default_icon": "images/icon128.png"
   },
 
@@ -18,8 +18,7 @@
     {
       "js": ["scripts/content.js"],
       "matches": [
-        "https://developer.chrome.com/docs/extensions/*",
-        "https://developer.chrome.com/docs/webstore/*"
+   "https://www.linkedin.com/*"
       ]
     }
   ]
