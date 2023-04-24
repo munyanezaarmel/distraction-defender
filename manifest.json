@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Distraction Defender ",
+  "name": "Distraction Defender",
   "version": "1.0",
   "description": "DistractionDefender is a productivity-focused Chrome extension that helps you stay on task by blocking distracting websites. Whether you're trying to study, work, or just need to stay focused, DistractionDefender has got you covered. With its customizable settings, you can choose which websites to block and for how long, giving you complete control over your browsing habits. Say goodbye to mindless scrolling and hello to a more productive you with DistractionDefender",
   "icons": {
@@ -9,17 +9,51 @@
     "48": "images/icon48.png",
     "128": "images/icon128.png"
   },
+  "background": {
+    "service_worker": "background.js"
+  },
   "action": {
-    "default_popup": "popup/hello.html",
+    "default_popup": "popup/index.html",
     "default_icon": "images/icon128.png"
   },
 
+  "permissions": ["activeTab"],
+
   "content_scripts": [
     {
-      "js": ["scripts/content.js"],
       "matches": [
-   "https://www.linkedin.com/*"
-      ]
+        "https://*.facebook.com/*",
+        "https://*.twitter.com/*",
+        "https://*.instagram.com/*",
+        "https://*.tiktok.com/*",
+        "https://*.linkedin.com/*",
+        "https://*.reddit.com/*",
+        "https://*.pinterest.com/*",
+        "https://*.snapchat.com/*",
+        "https://*.youtube.com/*",
+        "https://*.whatsapp.com/*",
+        "https://*.wechat.com/*",
+        "https://*.tumblr.com/*",
+        "https://*.flickr.com/*",
+        "https://*.vimeo.com/*",
+        "https://*.twitch.tv/*",
+        "https://*.medium.com/*",
+        "https://*.quora.com/*",
+        "https://*.soundcloud.com/*",
+        "https://*.behance.net/*",
+        "https://*.deviantart.com/*",
+        "https://*.dribbble.com/*",
+        "https://*.etsy.com/*",
+        "https://*.goodreads.com/*",
+        "https://*.meetup.com/*",
+        "https://*.nextdoor.com/*",
+        "https://*.patreon.com/*",
+        "https://*.slack.com/*",
+        "https://*.telegram.org/*",
+        "https://*.xing.com/*"
+      ],
+      "js": ["scripts/content.js"],
+      "css": ["popup/styles.css"]
     }
   ]
 }
