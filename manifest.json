@@ -32,6 +32,7 @@
         "https://*.snapchat.com/*",
         "https://*.youtube.com/*",
         "https://*.whatsapp.com/*",
+        "https://*.web.whatsapp.com/*",
         "https://*.wechat.com/*",
         "https://*.tumblr.com/*",
         "https://*.flickr.com/*",
